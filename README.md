@@ -14,10 +14,10 @@ This code will not run unless you first configure the following three variables:
 * port = "<Your PostgreSQL Port Number HERE>"
 ---
     
-##### Tools & Supplies:
+##### Tools and Supplies:
 * < Database and table description here >
 
-* Python, SQLAlchemy, Pandas, Matplotlib, SQLAlchemy ORM queriies were all used for this project < edit or append here as needed>
+* Python, SQLAlchemy, Pandas, Matplotlib; SQLAlchemy ORM session queriies were made from SQLite data
 ---
 
 ### Guide to Repo Contents:
@@ -26,9 +26,10 @@ This code will not run unless you first configure the following three variables:
 * `abc.png` is < describe image >
 * In folder, `Resources` are the following 6 tables:
     1. `hawaii.sqlite` is a database of precipitation measurements at 9 stations
-    2. `hawaii_measurements.csv` is a table of precip measurements over time
+    2. `hawaii_measurements.csv` is a table of precip measurements over time from all stations
     3. `hawaii_stations.csv` is a table of geographic stations where the measurements were taken
     4. `Precipitation.png` is a plot of precipitation values over the most recent year
+    5. `tobs_year.png` is a histogram showing time of observation changes over the most recent year
 ---
 
 ### Observations:
