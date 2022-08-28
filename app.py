@@ -102,13 +102,13 @@ def star(start_date):
        as a path variable supplied by the user, or a 404 if not."""
 
     canonicalized = start_date.replace(" ", "").lower()
-    for query in mea:
-        session.query(mea.station, func.min(mea.tobs), func.avg(mea.tobs), func.max(mea.tobs)).filter(mea.date >= {start_date}).all()
+    for query in Base.classes.measurement:
+        search_term = session.query(mea.station, func.min(mea.tobs), func.avg(mea.tobs), func.max(mea.tobs)).filter(mea.date >= {start_date}).all()
 
         if search_term == canonicalized:
             return jsonify(query)
 
-    return jsonify({"error": f"That is not a date recognized by this dataframe. Please enter a startdate between {real_name} not found."}), 404
+    return jsonify({"error": f"That is not a date recognized by this dataframe. Please enter a startdate between 2010-01-01 and 2017-08-23, and in the format of YYYY-MM-DD."}), 404
 
 #################################################
 # 3. Run Main App debugger for main endpt
