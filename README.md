@@ -25,10 +25,10 @@ This code will not run unless you first configure the following three variables:
 * `climate_starter.ipynb` is < describe contents >
 * `abc.png` is < describe image >
 * In folder, `Resources` are the following 6 tables:
-    1. `hawaii.sqlite` is < describe contents >
-    2. `hawaii_measurements.csv` is < describe contents >
-    3. `hawaii_stations.csv` is < describe contents >
-    
+    1. `hawaii.sqlite` is a database of precipitation measurements at 9 stations
+    2. `hawaii_measurements.csv` is a table of precip measurements over time
+    3. `hawaii_stations.csv` is a table of geographic stations where the measurements were taken
+    4. `Precipitation.png` is a plot of precipitation values over the most recent year
 ---
 
 ### Observations:
@@ -41,5 +41,5 @@ This code will not run unless you first configure the following three variables:
 
 ### Credits and Special Thanks
 
-* Tom Lenzmeier for sharing a name concatenation technique
-* Thanks to Sanoo Singh for inspiring me to practice subquery method
+* Thanks to Sanoo Singh for helping me clean up my plot labels and legend
+* Thanks to 
